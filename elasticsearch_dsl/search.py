@@ -1,6 +1,6 @@
 from six import iteritems, string_types
 
-from elasticsearch.helpers import scan
+from elasticsearch_legacy.helpers import scan
 
 from .query import Q, EMPTY_QUERY, Filtered
 from .filter import F, EMPTY_FILTER
@@ -171,11 +171,11 @@ class Request(object):
 
     def using(self, client):
         """
-        Associate the search request with an elasticsearch client. A fresh copy
+        Associate the search request with an elasticsearch_legacy client. A fresh copy
         will be returned with current instance remaining unchanged.
 
-        :arg client: an instance of ``elasticsearch.Elasticsearch`` to use or
-            an alias to look up in ``elasticsearch_dsl.connections``
+        :arg client: an instance of ``elasticsearch_legacy.Elasticsearch`` to use or
+            an alias to look up in ``elasticsearch_dsl_legacy.connections``
 
         """
         s = self._clone()

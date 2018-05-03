@@ -1,6 +1,6 @@
 from six import string_types
 
-from elasticsearch import Elasticsearch
+from elasticsearch_legacy import Elasticsearch
 
 from .serializer import serializer
 
@@ -59,7 +59,7 @@ class Connections(object):
 
     def create_connection(self, alias='default', **kwargs):
         """
-        Construct an instance of ``elasticsearch.Elasticsearch`` and register
+        Construct an instance of ``elasticsearch_legacy.Elasticsearch`` and register
         it under given alias.
         """
         kwargs.setdefault('serializer', serializer)

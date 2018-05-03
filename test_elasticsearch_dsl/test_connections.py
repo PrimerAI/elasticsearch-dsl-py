@@ -1,4 +1,4 @@
-from elasticsearch import Elasticsearch
+from elasticsearch_legacy import Elasticsearch
 
 from elasticsearch_dsl import connections, serializer
 

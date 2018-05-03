@@ -1,4 +1,4 @@
-from elasticsearch_dsl.faceted_search import FacetedSearch, TermsFacet
+from elasticsearch_dsl_legacy.faceted_search import FacetedSearch, TermsFacet
 
 class BlogSearch(FacetedSearch):
     doc_types = ['user', 'post']

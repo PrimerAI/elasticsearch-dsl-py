@@ -1,4 +1,4 @@
-from elasticsearch_dsl import field
+from elasticsearch_dsl_legacy import field
 
 
 def test_field_from_dict():
